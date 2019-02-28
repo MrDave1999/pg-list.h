@@ -13,44 +13,60 @@ Agrega los ficheros `list.h` & `deletenode.h` en el directorio del proyecto, es 
 
 # Funciones
 
-- `uint8_t CreateNode(void)` = Crea un nodo específico en la lista.
+- `uint8_t CreateNode(void)` 
 
-- `void PrintElementNodes(const uint8_t type)` = Imprime todos los elementos de una lista.
+  Crea un nodo específico en la lista.
 
-Sí utilizas así la función:
-```C
-printElementNodes(START);
-```
-Los elementos se muestran de forma ascendente, como por ejemplo: 1, 2, 3, 4.
+- `void PrintElementNodes(const uint8_t type)` 
 
-La otra opción es invocarlo así:
-```C
-printElementNodes(END);
-```
-Los elementos se mostrarán de manera descendente, como por ejemplo: 4, 3, 2, 1.
+	Imprime todos los elementos de una lista.
 
-- `uint8_t SearchElementNode(const int data)` = Busca un determinado elemento de un específico nodo.
+	Sí utilizas así la función:
+	```C
+	printElementNodes(START);
+	```
+	Los elementos se muestran de forma ascendente, como por ejemplo: 1, 2, 3, 4.
 
-- `uint8_t OrderList(const uint8_t type)` = Ordena una lista, ya sea de menor a mayor o de mayor a menor.
+	La otra opción es invocarlo así:
+	```C
+	printElementNodes(END);
+	```
+	Los elementos se mostrarán de manera descendente, como por ejemplo: 4, 3, 2, 1.
 
-***Tipo de llamada***:
+- `uint8_t SearchElementNode(const int data)` 
 
-**1.** Ordenar de menor a mayor:
-```C
-OrderList(AS); //Ascendente
-```
-**2.** Ordenar de mayor a menor:
-```C
-OrderList(DES); //Descendente
-```
+	Busca un determinado elemento de un específico nodo.
 
-- `uint8_t DeleteNodeForData(const int data)` = Libera un específico nodo de una lista. Donde el parámetro "data" es el elemento a borrar.
+- `uint8_t OrderList(const uint8_t type)` 
 
-- `void DeleteOneNode(void)` = Libera el primer nodo de la lista.
+	Ordena una lista, ya sea de menor a mayor o de mayor a menor.
 
-- `void DeleteLastNode(void)` = Libera el último nodo de la lista.
+	***Tipo de llamada***:
 
-- `void DeleteAllNode(void)` = Libera todos los nodos de la lista.
+	**1.** Ordenar de menor a mayor:
+	```C
+	OrderList(AS); //Ascendente
+	```
+	**2.** Ordenar de mayor a menor:
+	```C
+	OrderList(DES); //Descendente
+	```
+
+- `uint8_t DeleteNodeForData(const int data)` 
+
+	Libera un específico nodo de una lista. Donde el parámetro "data" es el elemento a borrar.
+
+- `void DeleteOneNode(void)` 
+
+	Libera el primer nodo de la lista.
+
+- `void DeleteLastNode(void)` 
+
+	Libera el último nodo de la lista.
+
+- `void DeleteAllNode(void)` 
+
+	Libera todos los nodos de la lista.
 
 # Uso
 
